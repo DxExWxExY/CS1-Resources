@@ -81,6 +81,27 @@ public class SyntaxCheatSheet {
         for (i = /*value*/; /*condition*/; /*update value of i (i++, i--, etc.)*/) {
             // Do something
         }
+
+        /*Different ways to declare arrays*/
+        int[] array = {1, 2, 3, 4};
+        double[] array1 = new double[n]; //where n >= 0
+
+        /*DIffernt ways to declare 2D arrays*/
+        String[][] strings = {
+                            {"va1","val2"},
+                            {"val3","val4"}
+                            };
+        boolean[][] booleans = new boolean[n][m]; // where n and m are >= 0
+
+        /*General Structure for accessing elements in 2D arrays AKA matrix*/
+        /*Always use the length property*/
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                /*The innermost loop iterates trough the columns
+                * in row i
+                * */
+            }
+        }
     }
 }
 
