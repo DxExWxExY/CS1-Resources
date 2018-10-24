@@ -1,5 +1,6 @@
 /**
  * This contains a syntax guide for several topics covered in class up to week n.
+ *
  * @version Week 5
  */
 public class SyntaxCheatSheet {
@@ -52,8 +53,8 @@ public class SyntaxCheatSheet {
         /*Switches can have unlimited cases if needed*/
         switch (/*variable*/) {
             case /*value to be compared*/:
-                // Do something if true
-                break;
+            // Do something if true
+            break;
             default:
                 // Do something outside of the scope of your previous checks
                 break;
@@ -71,14 +72,14 @@ public class SyntaxCheatSheet {
         } while (/*condition*/);
 
         /*if you do not plan to use i outside the for loop */
-        for (int i = /*value*/; /*condition*/; /*update value of i (i++, i--, etc.)*/) {
+        for (int i = /*value*/; /*condition*/ ; /*update value of i (i++, i--, etc.)*/) {
             // Do something
         }
 
         /*if you want to use i outside the loop. Remember that i will have the value it had
-        * before it exited the for loop, not the initial value*/
+         * before it exited the for loop, not the initial value*/
         int i;
-        for (i = /*value*/; /*condition*/; /*update value of i (i++, i--, etc.)*/) {
+        for (i = /*value*/; /*condition*/ ; /*update value of i (i++, i--, etc.)*/) {
             // Do something
         }
 
@@ -88,9 +89,9 @@ public class SyntaxCheatSheet {
 
         /*DIffernt ways to declare 2D arrays*/
         String[][] strings = {
-                            {"va1","val2"},
-                            {"val3","val4"}
-                            };
+                {"va1", "val2"},
+                {"val3", "val4"}
+        };
         boolean[][] booleans = new boolean[n][m]; // where n and m are >= 0
 
         /*General Structure for accessing elements in 2D arrays AKA matrix*/
@@ -98,10 +99,16 @@ public class SyntaxCheatSheet {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 /*The innermost loop iterates trough the columns
-                * in row i
-                * */
+                 * in row i
+                 * */
             }
         }
+    }
+
+    /*method Declarations*/
+    public static /*return type*/ /*name*/(/*parameters (DataType name, ...)*/) {
+        // code goes here
+        return /*might not be needed if using void type*/;
     }
 }
 
